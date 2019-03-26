@@ -16,12 +16,11 @@ const instructions = Platform.select({
     'Shake or press menu button for dev menu',
 });
 
-type Props = {};
-export default class App extends Component<Props> {
+// type Props = {};
+export default class App extends Component {
   render() {
     return (
       <View style={styles.container}>
-        <Text style={styles.welcome}>Welcome to React Native!</Text>
         <Text style={styles.instructions}>To get started, edit App.js</Text>
         <Text style={styles.instructions}>{instructions}</Text>
       </View>
@@ -47,3 +46,16 @@ const styles = StyleSheet.create({
     marginBottom: 5,
   },
 });
+
+// import React, { Component } from 'react'
+// import { AppRegistry, Text } from 'react-native'
+
+// export default class appName extends Component {
+//   render() {
+//     return (
+//       <Text>Olá mundo</Text>
+//     );
+//   }
+// }
+
+// AppRegistry.registerComponent('HelloWorldApp', () => HelloWorldApp)
